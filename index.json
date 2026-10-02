@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "sourceName": "Blue Krimzon Guard Source",
-  "lastUpdated": "2026-10-02T21:46:22Z",
+  "lastUpdated": "2026-10-02T22:14:34Z",
   "mods": {
     "blue-krimzon-guard": {
       "displayName": "Blue Krimzon Guard",
@@ -20,17 +20,17 @@
       "versions": [
         {
           "version": "1.0.0",
-          "publishedDate": "2026-09-17T14:47:44Z",
+          "publishedDate": "2026-10-02T22:14:34Z",
           "supportedGames": [
             "jak2"
           ],
           "assets": {
-            "windows": "https://github.com/whozghiar/jak-project/releases/download/blue-krimzon-guard-v1.0.0/windows-blue-krimzon-guard-v1.0.0.zip",
-            "linux": "https://github.com/whozghiar/jak-project/releases/download/blue-krimzon-guard-v1.0.0/linux-blue-krimzon-guard-v1.0.0.zip"
+            "windows": "https://github.com/whozghiar/jak2-mod-blue-krimzon-guard/releases/download/blue-krimzon-guard-v1.0.0/windows-blue-krimzon-guard-v1.0.0.zip",
+            "linux": "https://github.com/whozghiar/jak2-mod-blue-krimzon-guard/releases/download/blue-krimzon-guard-v1.0.0/linux-blue-krimzon-guard-v1.0.0.zip"
           },
           "checksums": {
-            "windows": "",
-            "linux": ""
+            "windows": "862174566bbe5970eb98ef3bb02a1c4719c137d291b8cfa083758d313cd60454",
+            "linux": "f0d18ace93c123826b9d2ab5f0e198a1404d6c2769be3f4045320d0d145ceaa9"
           }
         }
       ],
@@ -60,7 +60,7 @@
       "versions": [
         {
           "version": "1.0.0",
-          "publishedDate": "2026-10-02T21:46:22Z",
+          "publishedDate": "2026-10-02T22:14:34Z",
           "supportedGames": [
             "jak2"
           ],
@@ -68,11 +68,6 @@
             "windows": "https://github.com/whozghiar/jak2-mod-blue-krimzon-guard/releases/download/blue-krimzon-guard-v1.0.0/blue-kg-vehicles-textures-v1.0.0.zip",
             "linux": "https://github.com/whozghiar/jak2-mod-blue-krimzon-guard/releases/download/blue-krimzon-guard-v1.0.0/blue-kg-vehicles-textures-v1.0.0.zip",
             "jak2": "https://github.com/whozghiar/jak2-mod-blue-krimzon-guard/releases/download/blue-krimzon-guard-v1.0.0/blue-kg-vehicles-textures-v1.0.0.zip"
-          },
-          "checksums": {
-            "windows": "11f0e0fe2004b2737a8f7978c367c3699aa264249c4445872d655c12c94592d3",
-            "linux": "11f0e0fe2004b2737a8f7978c367c3699aa264249c4445872d655c12c94592d3",
-            "jak2": "11f0e0fe2004b2737a8f7978c367c3699aa264249c4445872d655c12c94592d3"
           }
         }
       ]
