@@ -29,16 +29,16 @@ untouched. The only gameplay addition is that some of them carry a grenade launc
 - **Repository:** [`whozghiar/jak2-mod-blue-krimzon-guard`](https://github.com/whozghiar/jak2-mod-blue-krimzon-guard)
 - **Mod Slug:** `crimson-blueguard`
 
-### Branch family
+### Mod family
 
-This branch is the reskin, and nothing else. The two gameplay variants built on top of the same
-entity live on their own branches:
+This repository is the reskin, and nothing else. The two gameplay variants built on top of the same
+entity live in their own repositories:
 
-| Branch | Contents |
+| Repository | Contents |
 |---|---|
-| **`jak2/features/crimson-blueguard/crimson-redguard-behavior`** *(this one)* | blue guards replacing red guards, identical behaviour, optional grenade launcher |
-| `jak2/features/crimson-blueguard/peaceful` | **City Peaceful** — neutral blue patrol squads |
-| `jak2/features/crimson-blueguard/city-insurrection` | **City Insurrection** — three-front territorial civil war |
+| **`whozghiar/jak2-mod-blue-krimzon-guard`** *(this one)* | blue guards replacing red guards, identical behaviour, optional grenade launcher |
+| [`whozghiar/jak2-mod-peaceful-haven-city`](https://github.com/whozghiar/jak2-mod-peaceful-haven-city) | **City Peaceful** — neutral blue patrol squads |
+| [`whozghiar/jak2-mod-haven-city-rebellion`](https://github.com/whozghiar/jak2-mod-haven-city-rebellion) | **City Insurrection** — three-front territorial civil war |
 
 ## ✨ Key Features
 
@@ -104,9 +104,9 @@ task boot-game
 
 ## 🎮 Controls & Gameplay Usage
 
-The mod adds no new controls. Everything happens through one debug-menu entry:
+The mod adds no new controls. Everything happens through one Mods-menu entry:
 
-1. Open the debug menu in-game.
+1. Press `L3 + SELECT` in-game to open the Mods menu (works in a normal launcher boot, no debug mode needed).
 2. Go to `Mods ▸ crimson-blueguard`.
 3. Press `Enable / Disable`.
 
