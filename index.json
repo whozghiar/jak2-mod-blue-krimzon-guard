@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "sourceName": "Blue Krimzon Guard Source",
-  "lastUpdated": "2026-10-02T13:46:18Z",
+  "lastUpdated": "2026-10-02T14:15:25Z",
   "mods": {
     "blue-krimzon-guard": {
       "displayName": "Blue Krimzon Guard",
@@ -16,7 +16,7 @@
       "supportedGames": [
         "jak2"
       ],
-      "websiteUrl": "https://github.com/whozghiar/jak2-blue-krimzon-guard",
+      "websiteUrl": "https://github.com/whozghiar/jak2-mod-blue-krimzon-guard",
       "versions": [
         {
           "version": "1.0.0",
@@ -34,8 +34,8 @@
           }
         }
       ],
-      "coverArtUrl": "https://raw.githubusercontent.com/whozghiar/jak2-blue-krimzon-guard/main/docs/img/mod/mod_cover.png",
-      "thumbnailArtUrl": "https://raw.githubusercontent.com/whozghiar/jak2-blue-krimzon-guard/main/docs/img/mod/mod_cover.png"
+      "coverArtUrl": "https://raw.githubusercontent.com/whozghiar/jak2-mod-blue-krimzon-guard/main/docs/img/mod/mod_cover.png",
+      "thumbnailArtUrl": "https://raw.githubusercontent.com/whozghiar/jak2-mod-blue-krimzon-guard/main/docs/img/mod/mod_cover.png"
     }
   },
   "texturePacks": {
