@@ -32,7 +32,7 @@ change weapons as the alert escalates — because they inherit every one of thos
 untouched. The only gameplay addition is that some of them carry a grenade launcher.
 
 - **Target Game:** Jak 2
-- **Active Branch:** `jak2/features/crimson-blueguard/crimson-redguard-behavior`
+- **Repository:** [`whozghiar/jak2-mod-blue-krimzon-guard`](https://github.com/whozghiar/jak2-mod-blue-krimzon-guard)
 - **Mod Slug:** `crimson-blueguard`
 
 ### Branch family
@@ -187,7 +187,7 @@ héritent de chacun de ces chemins de code sans modification. Le seul ajout de g
 certains portent un lance-grenade.
 
 - **Jeu Ciblé :** Jak 2
-- **Branche Active :** `jak2/features/crimson-blueguard/crimson-redguard-behavior`
+- **Dépôt :** [`whozghiar/jak2-mod-blue-krimzon-guard`](https://github.com/whozghiar/jak2-mod-blue-krimzon-guard)
 - **Slug du Mod :** `crimson-blueguard`
 
 ### Famille de branches
