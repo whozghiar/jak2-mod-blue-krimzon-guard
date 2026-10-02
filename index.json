@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "sourceName": "blue-krimzon-guard Source",
+  "sourceName": "Blue Krimzon Guard Source",
   "lastUpdated": "2026-10-02T01:38:48Z",
   "mods": {
     "blue-krimzon-guard": {
-      "displayName": "blue-krimzon-guard",
+      "displayName": "Blue Krimzon Guard",
       "description": "Turns Haven City's Crimson Guard blue. The mod adds a blue-recolored Crimson Guard as its own standalone entity — a new GOAL type, `crimson-blue-guard`, that is a subtype of the stock `crimson-guard`. While the mod is enabled it guard bikes and hellcats. Turn it off and the city goes back to 100% red. The blue guards are **not** a new faction and **not** a new AI. They behave exactly like the red ones — they react to your crimes, raise the wanted level, chase you, shoot, try to arrest you and change weapons as the alert escalates — because they inherit every one of those code paths untouched. The only gameplay addition is that some of them carry a grenade launcher.",
       "authors": [
         "whozghiar"
@@ -16,7 +16,7 @@
       "supportedGames": [
         "jak2"
       ],
-      "websiteUrl": "https://github.com/whozghiar/jak-project/tree/jak2/features/blue-krimzon-guard",
+      "websiteUrl": "https://github.com/whozghiar/jak2-blue-krimzon-guard",
       "versions": [
         {
           "version": "1.0.0",
