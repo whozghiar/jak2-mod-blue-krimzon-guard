@@ -139,28 +139,6 @@ city level:
 
 ▶️ **[Watch the demonstration video on YouTube](https://youtu.be/q3wOEOJBv3A)**
 
-## ✅ Compliance Checklist
-
-- [x] **Native non-regression:** with the mod compiled but its toggle OFF, the game plays identically to stock.
-- [x] **Debug ▸ Mods toggle:** registered via `(mods-menu-register "crimson-blueguard" ...)`. See [`docs/modding/tools/mods_debug_menu.md`](docs/modding/tools/mods_debug_menu.md).
-- [x] **No direct `default-menu*.gc` edits.**
-- [x] **Symbols prefixed** with the mod slug (`*mod-crimson-blueguard-enable*`, `mod-crimson-blueguard-*`).
-- [ ] **Verified Lisp instructions** used by this mod are present in `docs/modding/jak2_lisp_instructions.md` (to land on `master-dev` via `task modding-land-doc`).
-- [x] **In-code comments** on every new/overridden type, method, state, macro.
-- [ ] **Cold-boot verification** (`task boot-game`) run after the last `deftype` change.
-
-## 📝 Modding Changes Log
-
-| Area | Change |
-|---|---|
-| New entity | `crimson-blue-guard` (`levels/city/traffic/citizen/crimson-blue-guard.gc`): blue skeleton-group, hand-reproduced purple death dissolution, optional grenade launcher. Everything else inherited from `crimson-guard`. |
-| Ambient spawning | `traffic-manager.gc::traffic-object-spawn` picks the blue subtype for both city guard pools while the mod is on. Plus a `spawn-crimson-blue-guard-debug` REPL helper. |
-| Vehicle guards | `vehicle-rider.gc` binds the blue rider skeleton-group for `crimson-guard-rider` while the mod is on. |
-| Mod switch | `*mod-crimson-blueguard-enable*` defined in `engine/ai/traffic-h.gc`; the `Debug ▸ Mods` entry in `pc/debug/crimson-blueguard-menu.gc`. |
-| Build tooling | `:native-header #t` for `build-actor` (`project-lib.gp`, `Tools.cpp`, `build_actor.{h,cpp}`); a `build-sbk` macro; a generic `register-custom-art-group` hook in `joint.gc` / `level.gc`. |
-| Assets & DGOs | the two `.glb` sources; `crimson-blue-guard.o` in `cwi.gd`, `crimson-blueguard-menu.o` in `game.gd`, `crimson-blue-guard-ag.go` in the 10 level DGOs that already carry `crimson-guard-ag.go`. |
-| Removed from this branch | City Peaceful / City Insurrection and the `*mod-city-*-hook*` extension layer, now only on their own branches. All stock engine files they touched (`guard.gc`, `citizen.gc`, `traffic-engine.gc`, `default-menu-pc.gc`) are back to their `master-dev` state. |
-
 ## 📖 Technical Documentation
 
 For the complete technical breakdown, architecture, and developer notes, refer to:
@@ -296,28 +274,6 @@ de ville :
 [![Vidéo de Démonstration](https://img.youtube.com/vi/q3wOEOJBv3A/maxresdefault.jpg)](https://youtu.be/q3wOEOJBv3A)
 
 ▶️ **[Visionner la vidéo de démonstration sur YouTube](https://youtu.be/q3wOEOJBv3A)**
-
-## ✅ Checklist de Conformité
-
-- [x] **Non-régression native :** mod compilé mais bascule désactivée, le jeu se joue exactement comme d'origine.
-- [x] **Bascule Debug ▸ Mods :** enregistrée via `(mods-menu-register "crimson-blueguard" ...)`. Voir [`docs/modding/tools/mods_debug_menu.md`](docs/modding/tools/mods_debug_menu.md).
-- [x] **Aucune édition directe de `default-menu*.gc`.**
-- [x] **Symboles préfixés** par le slug du mod (`*mod-crimson-blueguard-enable*`, `mod-crimson-blueguard-*`).
-- [ ] **Instructions Lisp vérifiées** utilisées par ce mod présentes dans `docs/modding/jak2_lisp_instructions.md` (à faire atterrir sur `master-dev` via `task modding-land-doc`).
-- [x] **Commentaires dans le code** sur chaque type, méthode, état et macro ajouté ou surchargé.
-- [ ] **Vérification cold boot** (`task boot-game`) après le dernier changement de `deftype`.
-
-## 📝 Journal des Changements de Modding
-
-| Domaine | Changement |
-|---|---|
-| Nouvelle entité | `crimson-blue-guard` (`levels/city/traffic/citizen/crimson-blue-guard.gc`) : skeleton-group bleu, dissolution violette à la mort reproduite à la main, lance-grenade optionnel. Tout le reste hérité de `crimson-guard`. |
-| Spawn ambiant | `traffic-manager.gc::traffic-object-spawn` choisit le sous-type bleu pour les deux pools de gardes de la ville quand le mod est actif. Plus une aide REPL `spawn-crimson-blue-guard-debug`. |
-| Gardes en véhicule | `vehicle-rider.gc` lie le skeleton-group du pilote bleu pour `crimson-guard-rider` quand le mod est actif. |
-| Interrupteur du mod | `*mod-crimson-blueguard-enable*` défini dans `engine/ai/traffic-h.gc` ; l'entrée `Debug ▸ Mods` dans `pc/debug/crimson-blueguard-menu.gc`. |
-| Outillage de build | `:native-header #t` pour `build-actor` (`project-lib.gp`, `Tools.cpp`, `build_actor.{h,cpp}`) ; une macro `build-sbk` ; un hook générique `register-custom-art-group` dans `joint.gc` / `level.gc`. |
-| Assets & DGOs | les deux sources `.glb` ; `crimson-blue-guard.o` dans `cwi.gd`, `crimson-blueguard-menu.o` dans `game.gd`, `crimson-blue-guard-ag.go` dans les 10 DGOs de niveau qui portent déjà `crimson-guard-ag.go`. |
-| Retiré de cette branche | City Peaceful / City Insurrection et la couche d'extension `*mod-city-*-hook*`, désormais uniquement sur leurs propres branches. Tous les fichiers moteur d'origine qu'ils touchaient (`guard.gc`, `citizen.gc`, `traffic-engine.gc`, `default-menu-pc.gc`) sont revenus à leur état `master-dev`. |
 
 ## 📖 Documentation Technique
 
